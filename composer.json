@@ -3,7 +3,7 @@
     "description": "Common helper classes",
     "type": "library",
     "require-dev": {
-        "php": "^7.3|^8.0",
+        "php": "^7.4|^8.0",
         "vimeo/psalm": "^4.2",
         "phpunit/phpunit": "^9.4",
         "infection/infection": "^0.20.2",
@@ -31,7 +31,7 @@
         "laravel/lumen-framework": "^8.2"
     },
     "scripts": {
-        "psalm": "psalm",
+        "psalm": "psalm --stats",
         "test": "phpunit",
         "test:cover": "phpunit --coverage-xml ./coverage",
         "infection": "infection"

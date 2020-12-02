@@ -9,6 +9,7 @@ use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Laravel\Lumen\Http\ResponseFactory;
 use Illuminate\Http\JsonResponse;
 use Mockery;
+use ReflectionClass;
 
 /**
  * @covers LMSHelper\ControllerHelper
@@ -29,13 +30,15 @@ final class ControllerHelperTest extends TestCase
         $stub->shouldReceive('find')->with(1)->andReturn($stub, null);
 
         $mock = Mockery::mock(ControllerHelper::class);
-        $this->assertInstanceOf(Model::class, $mock->findModelOrFail($stub::class, 1));
+        
+        $this->assertInstanceOf(Model::class, $mock->findModelOrFail((new ReflectionClass($stub))->getName(), 1));
+        // call_user_func_array([$mock, 'findModelOrFail'], [(new ReflectionClass($stub))->getName(), 1])
 
         // should throw exception if not found
         $this->expectException(ModelNotFoundException::class);
         $this->expectExceptionCode(404);
         $this->expectExceptionMessage('Unable to find model 1');
-        $mock->findModelOrFail($stub::class, 1);
+        $mock->findModelOrFail((new ReflectionClass($stub))->getName(), 1);
     }
 
     public function testRespond(): void
