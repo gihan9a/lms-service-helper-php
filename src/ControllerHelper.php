@@ -11,15 +11,14 @@ use Laravel\Lumen\Http\ResponseFactory;
 
 trait ControllerHelper
 {
-
     /**
      * Find model by id or fail
      *
      * @param string  $class
      * @param int $id
-     * 
+     *
      * @return Model
-     * 
+     *
      * @author Gihan S <gihanshp@gmail.com>
      */
     public function findModelOrFail(string $class, int $id): Model
@@ -40,9 +39,9 @@ trait ControllerHelper
      * @param array           $data
      * @param array           $errors
      * @param int             $code
-     * 
+     *
      * @return \Illuminate\Http\JsonResponse
-     * 
+     *
      * @author Gihan S <gihanshp@gmail.com>
      */
     public function respond(
@@ -50,8 +49,7 @@ trait ControllerHelper
         array $data = null,
         array $errors = null,
         int $code = Response::HTTP_OK
-    ): \Illuminate\Http\JsonResponse 
-    {
+    ): \Illuminate\Http\JsonResponse {
         $json = [
             'code' => $code,
             'data' => $data,

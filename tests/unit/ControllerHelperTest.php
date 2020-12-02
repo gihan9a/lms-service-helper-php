@@ -30,7 +30,7 @@ final class ControllerHelperTest extends TestCase
         $stub->shouldReceive('find')->with(1)->andReturn($stub, null);
 
         $mock = Mockery::mock(ControllerHelper::class);
-        
+
         $this->assertInstanceOf(Model::class, $mock->findModelOrFail((new ReflectionClass($stub))->getName(), 1));
         // call_user_func_array([$mock, 'findModelOrFail'], [(new ReflectionClass($stub))->getName(), 1])
 
