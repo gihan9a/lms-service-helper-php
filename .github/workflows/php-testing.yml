@@ -1,4 +1,4 @@
-name: PHP Composer
+name: PHP Testing
 
 on:
   push:
@@ -55,8 +55,5 @@ jobs:
       - name: Run test suite
         run: composer run-script test
 
-      - name: Run static analysis
-        run: composer run-script psalm
-
       - name: Run infection
-        run: composer run-script infection
+        run: composer run-script infection -- --only-covered --logger-github --ignore-msi-with-no-mutations

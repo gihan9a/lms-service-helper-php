@@ -1,4 +1,5 @@
 # LMS Helper package
+[![StyleCI](https://github.styleci.io/repos/317586930/shield)](https://github.styleci.io/repos/317586930) ![GitHub PHP Composer](https://img.shields.io/github/workflow/status/gihan9a/lms-service-helper-php/PHP%20Composer) ![GitHub PHP Static Analysis](https://img.shields.io/github/workflow/status/gihan9a/lms-service-helper-php/PHP%20Static%20Analysis) ![GitHub PHP Testing](https://img.shields.io/github/workflow/status/gihan9a/lms-service-helper-php/PHP%20Testing)
 
 This is a composer library package for LMS microservices.  
 This package contains helper Classes, Traits, utilities etc.
