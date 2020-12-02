@@ -19,5 +19,5 @@ Add following repository configuration under `repositories`.
 Now require the package as below under `require`.
 
 ```json
-"gihan9a/lms-service-helper-php": "dev-main"
+"gihan9a/lms-service-helper-php": "1.0.1"
 ```
