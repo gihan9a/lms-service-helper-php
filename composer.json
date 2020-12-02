@@ -1,5 +1,5 @@
 {
-    "name": "gihan/lms-service-helper-php",
+    "name": "gihan9a/lms-service-helper-php",
     "description": "Common helper classes",
     "type": "library",
     "require-dev": {
