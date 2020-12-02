@@ -3,3 +3,4 @@
 .phpunit.cache
 infection.log
 composer.lock
+coverage.xml

@@ -33,7 +33,8 @@
     "scripts": {
         "psalm": "psalm --stats",
         "test": "phpunit",
-        "test:cover": "phpunit --coverage-xml ./coverage",
+        "test:cover": "phpunit --coverage-html ./coverage",
+        "test:ci": "phpunit --coverage-clover coverage.xml",
         "infection": "infection"
     }
 }

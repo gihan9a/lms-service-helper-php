@@ -52,8 +52,10 @@ jobs:
       - name: Install dependencies
         run: composer update --prefer-dist --no-interaction --no-progress --optimize-autoloader --ansi
 
-      - name: Run test suite
-        run: composer run-script test
+      - name: Run test suite with coverage
+        run: |
+          composer run-script test:ci
+          bash <(curl -s https://codecov.io/bash)
 
       - name: Run infection
         run: composer run-script infection -- --only-covered --logger-github --ignore-msi-with-no-mutations
