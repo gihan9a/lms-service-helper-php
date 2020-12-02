@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "da25162a4a8e8cc3a7c0094426b69f99",
+    "content-hash": "104f722a10e92c733646e395803c051a",
     "packages": [
         {
             "name": "brick/math",
@@ -1860,52 +1860,6 @@
                 "source": "https://github.com/laravel/framework"
             },
             "time": "2020-11-02T14:01:41+00:00"
-        },
-        {
-            "name": "laravel/lumen",
-            "version": "v8.1.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/laravel/lumen.git",
-                "reference": "e74f6123c51f7ba896859cd09af5e9e47bca6d2c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/laravel/lumen/zipball/e74f6123c51f7ba896859cd09af5e9e47bca6d2c",
-                "reference": "e74f6123c51f7ba896859cd09af5e9e47bca6d2c",
-                "shasum": ""
-            },
-            "require": {
-                "laravel/lumen-framework": "^8.0",
-                "php": "^7.3|^8.0"
-            },
-            "require-dev": {
-                "fakerphp/faker": "^1.9.1",
-                "mockery/mockery": "^1.3.1",
-                "phpunit/phpunit": "^9.3"
-            },
-            "type": "project",
-            "autoload": {
-                "psr-4": {
-                    "App\\": "app/",
-                    "Database\\Factories\\": "database/factories/",
-                    "Database\\Seeders\\": "database/seeders/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "The Laravel Lumen Framework.",
-            "keywords": [
-                "framework",
-                "laravel",
-                "lumen"
-            ],
-            "support": {
-                "source": "https://github.com/laravel/lumen/tree/v8.1.1"
-            },
-            "time": "2020-11-24T08:26:02+00:00"
         },
         {
             "name": "laravel/lumen-framework",

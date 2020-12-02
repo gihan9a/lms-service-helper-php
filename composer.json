@@ -17,9 +17,6 @@
         }
     ],
     "minimum-stability": "stable",
-    "require": {
-        "laravel/lumen": "^8.1"
-    },
     "autoload": {
         "psr-4": {
             "LMSHelper\\": "src/",
@@ -30,5 +27,8 @@
         "classmap": [
             "tests/"
         ]
+    },
+    "require": {
+        "laravel/lumen-framework": "^8.2"
     }
 }
