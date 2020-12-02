@@ -29,5 +29,11 @@
     },
     "require": {
         "laravel/lumen-framework": "^8.2"
+    },
+    "scripts": {
+        "psalm": "psalm",
+        "test": "phpunit",
+        "test:cover": "phpunit --coverage-xml ./coverage",
+        "infection": "infection"
     }
 }
