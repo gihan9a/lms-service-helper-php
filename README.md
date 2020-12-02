@@ -3,7 +3,7 @@
 This is a composer library package for LMS microservices.  
 This package contains helper Classes, Traits, utilities etc.
 
-## How to include in composer
+## Include this package in your composer project
 
 Add following repository configuration under `repositories`.
 
@@ -16,8 +16,32 @@ Add following repository configuration under `repositories`.
 ]
 ```
 
-Now require the package as below under `require`.
+Now add the package via `composer require`  
+`composer require gihan9a/lms-service-helper-php`
 
-```json
-"gihan9a/lms-service-helper-php": "1.0.1"
-```
+
+## Testing
+
+### Code quality testing
+
+Run following composer script commands to run tests and other code quality tools
+
+Run PHPUnit tests  
+`composer run-script test`
+
+Run PHPUnit tests with coverage (output in HTML format inside `coverage` directory)  
+`composer run-script test:coverage`
+
+Run Static analyzer tool with `psalm`  
+`composer run-script psalm`
+
+Run mutation testing with `infection`
+`composer run-script infection`
+
+### Testing GitHub workflow locally
+
+Install `act` tool https://github.com/nektos/act
+
+Then run following command
+
+`act -P ubuntu-latest=shivammathur/node:latest`
