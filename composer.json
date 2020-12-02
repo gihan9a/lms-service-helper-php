@@ -19,8 +19,7 @@
     "minimum-stability": "stable",
     "autoload": {
         "psr-4": {
-            "LMSHelper\\": "src/",
-            "Tests\\": "tests/"
+            "LMSHelper\\": "src/"
         }
     },
     "autoload-dev": {
